@@ -18,7 +18,7 @@
       definition: '6'
       buildVersionToDownload: 'latest'
       targetPath: '$(Pipeline.Workspace)'
-      - task: AzureResourceManagerTemplateDeployment@3
+      - task: AzureResourceManagerTemplateDeployment
         inputs:
           deploymentScope: 'Resource Group'
           azureResourceManagerConnection: 'Azure Connection'
